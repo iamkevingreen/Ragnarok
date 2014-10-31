@@ -1,3 +1,10 @@
+
+@import ".meteor/local/bower/bourbon/dist/bourbon";
+@import ".meteor/local/bower/neat/app/assets/stylesheets/neat";
+
 body {
   background: red;
+  width:100%;
+  padding: 10px;
+  @include box-sizing(border-box);
 }
