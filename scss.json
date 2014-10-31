@@ -1,0 +1,7 @@
+{
+  "includePaths": [
+    "bower_components",
+    "bower_components/bourbon/dist",
+    "bower_components/neat/app/assets/stylesheets"
+  ]
+}
