@@ -1,6 +1,9 @@
 <template name="header">
   <header>
-    <h1>Simple Meteor CMS</h1>
+    <a class="index" href="{{pathFor 'postsList'}}"><h1>Simple Meteor CMS</h1></a>
+    <div class="login">
+      {{> loginButtons}}
+    </div>
   </header>
   <div class="container">
     <ul>

@@ -11,4 +11,6 @@ mquandalle:bower
 lepozepo:s3
 iron:router
 sacha:spin
+accounts-ui
+accounts-password
 
