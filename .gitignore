@@ -1,1 +1,3 @@
 bower_components/*
+
+server/s3config.js
