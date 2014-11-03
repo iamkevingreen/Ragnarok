@@ -13,6 +13,7 @@ Run `meteor` in the root to install dependencies and start the server
 * [Neat for a grid system](http://neat.bourbon.io/)
 * [SASS support via meteor-scss (meteor package)](https://github.com/fourseven/meteor-scss)
 * [bower support via mquandalle (meteor package)](https://github.com/mquandalle/meteor-bower)
+* [s3 upload support via lepozep (meteor package)](https://github.com/Lepozepo/S3/)
 
 *please check packages above if any issues arrive*
 
