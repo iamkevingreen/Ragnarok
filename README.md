@@ -3,6 +3,8 @@ MSB Meteor-SASS-Bower
 
 ## Setup
 
+Navigate to `server/fixtures.js` to change the default admin settings to whatever you want for the initial user 
+
 Run `meteor` in the root to install dependencies and start the server
 
 *No need to run bower install despite it being in the root meteor package handles that*
