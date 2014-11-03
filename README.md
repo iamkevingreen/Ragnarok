@@ -14,6 +14,7 @@ Run `meteor` in the root to install dependencies and start the server
 * [SASS support via meteor-scss (meteor package)](https://github.com/fourseven/meteor-scss)
 * [bower support via mquandalle (meteor package)](https://github.com/mquandalle/meteor-bower)
 * [s3 upload support via lepozep (meteor package)](https://github.com/Lepozepo/S3/)
+* [Meteor Accounts-UI and Accounts-Password](https://docs.meteor.com/#/basic/accounts)
 
 *please check packages above if any issues arrive*
 
