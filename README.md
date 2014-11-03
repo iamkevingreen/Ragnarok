@@ -1,5 +1,20 @@
-meteor-sass-bower
+MSB Meteor-SASS-Bower
 =================
+
+## Setup
+
+Run `meteor` in the root to install dependencies and start the server
+
+*No need to run bower install despite it being in the root meteor package handles that*
+
+## What's out of the box?
+
+* [Bourbon mixin library](http://bourbon.io/)
+* [Neat for a grid system](http://neat.bourbon.io/)
+* [SASS support via meteor-scss (meteor package)](https://github.com/fourseven/meteor-scss)
+* [bower support via mquandalle (meteor package)](https://github.com/mquandalle/meteor-bower)
+
+*please check packages above if any issues arrive*
 
 ## Dummy Meteor App
 
