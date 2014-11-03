@@ -1,4 +1,4 @@
-Meteor.subscribe('words');
+Meteor.subscribe('posts');
 
 Template.body.events({
   "click button": function() {

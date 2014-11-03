@@ -1,5 +1,7 @@
-<template name="wordsList">
+<template name="postsList">
   <div class="posts">
-    {{words.word}} {{words.word}} 
+    {{#each posts}}
+      {{> postItem}}
+    {{/each}}
   </div>
 </template>
