@@ -1,6 +1,8 @@
 Ragnarok
 =================
 
+[![Build Status](https://travis-ci.org/iamkevingreen/Ragnarok.svg?branch=master)](https://travis-ci.org/iamkevingreen/Ragnarok)
+
 **A Meteor based CMS with Sass & Bower**
 
 ## Setup
