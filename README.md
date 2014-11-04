@@ -1,9 +1,11 @@
-MSB Meteor-SASS-Bower
+Ragnarok
 =================
+
+**A Meteor based CMS with Sass & Bower**
 
 ## Setup
 
-Navigate to `server/fixtures.js` to change the default admin settings to whatever you want for the initial user 
+Navigate to `server/fixtures.js` to change the default admin settings to whatever you want for the initial user
 
 Run `meteor` in the root to install dependencies and start the server
 
