@@ -1,0 +1,12 @@
+
+// bower install components
+@import ".meteor/local/bower/normalize-css/normalize.css";
+@import ".meteor/local/bower/bourbon/dist/bourbon";
+@import ".meteor/local/bower/neat/app/assets/stylesheets/neat";
+
+
+// partials
+
+@import "partials/global";
+@import "partials/header";
+@import "partials/grid";

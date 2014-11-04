@@ -12,3 +12,15 @@ header {
   float: right;
   padding: 20px;
 }
+
+nav {
+  li {
+    list-style-type: none;
+    display: inline-block;
+    a {
+      color: #000;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #000;
+    }
+  }
+}
