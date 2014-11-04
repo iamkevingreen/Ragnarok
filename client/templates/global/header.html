@@ -1,10 +1,17 @@
 <template name="header">
   <header>
-    <a class="index" href="{{pathFor 'postsList'}}"><h1>Simple Meteor CMS</h1></a>
+    <div class="logo">
+      <a class="index" href="{{pathFor 'postsList'}}"><h1>Simple Meteor CMS</h1></a>
+    </div>
     <div class="login">
       {{> loginButtons}}
     </div>
   </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="{{pathFor 'postSubmit'}}">Create new Post</a></li>
+    </ul>
+  </nav>
   <div class="features">
     <ul class="grid">
       <li>Bower</li>

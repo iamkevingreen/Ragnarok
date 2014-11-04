@@ -1,0 +1,14 @@
+header {
+  @include clearfix;
+}
+
+.logo {
+  float: left;
+  a {
+    color: #3f3f3f;
+  }
+}
+.login {
+  float: right;
+  padding: 20px;
+}
