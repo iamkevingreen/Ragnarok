@@ -1,11 +1,3 @@
-Template.body.events({
-  "click button": function() {
-    Meteor.call("words");
-    console.log('click');
-  }
-})
-
-
 Template.s3_tester.events({
     "click button.upload": function(){
         var files = $("input.file_bag")[0].files

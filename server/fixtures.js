@@ -1,12 +1,20 @@
-if ( Meteor.users.find().count() === 0 ) {
-    Accounts.createUser({
-        username: 'admin',
-        email: 'email@email.com',
-        password: 'pleasereset',
-        profile: {
-            first_name: 'Kevin',
-            last_name: 'Green',
-            company: 'District Domain',
-        }
-    });
-}
+Meteor.startup(function() {
+   if (Meteor.users.find().count() == 0) {
+       var users = [
+           {name:"Normal User",email:"normal@site.com",roles:[], password: "normal3210"},
+           {name:"Admin User",email:"admin@site.com",roles:['admin'], password: "admin3210"}
+       ];
+
+       _.each(users, function (user) {
+           var id = Accounts.createUser({
+               email: user.email,
+               password: user.password,
+               profile: { name: user.name }
+           });
+
+           if (user.roles.length > 0) {
+               Roles.addUsersToRoles(id, user.roles);
+           }
+       });
+   };
+});

@@ -11,6 +11,6 @@ Template.postSubmit.events({
   }
 });
 
-Template.postSubmit.rendered = function() {
-  $('#content').summernote();
-};
+// Template.postSubmit.rendered = function() {
+//   $('#content').summernote();
+// };

@@ -8,9 +8,9 @@
     </div>
   </header>
   <nav>
-    <ul class="navigation">
+    {{#if currentUser}}<ul class="admin-navigation">
       <li><a href="{{pathFor 'postSubmit'}}">Create new Post</a></li>
-    </ul>
+    </ul>{{/if}}
   </nav>
   <div class="features">
     <ul class="grid">
