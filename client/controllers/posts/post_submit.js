@@ -10,3 +10,7 @@ Template.postSubmit.events({
     Router.go('postPage', post);
   }
 });
+
+Template.postSubmit.rendered = function() {
+  $('#content').summernote();
+};
