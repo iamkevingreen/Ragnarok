@@ -1,10 +1,11 @@
 "use strict";
 describe("Post", function () {
     it("should be created with title and content", function () {
-        spyOn(Post, "insert").and.callFake(function(doc, callback) {
+        spyOn(Posts, "insert").and.callFake(function(doc, callback) {
             // simulate async return of id = "1";
             callback(null, "1");
         });
+        console.log('test');
 
         var post = new Post(null, "Tutorial 1", "young buck");
 
