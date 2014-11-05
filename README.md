@@ -1,7 +1,7 @@
 Ragnarok
 =================
 
-[![Build Status](https://travis-ci.org/iamkevingreen/Ragnarok.svg?branch=master)](https://travis-ci.org/iamkevingreen/Ragnarok)
+[![Build Status](https://travis-ci.org/iamkevingreen/Ragnarok.svg?branch=master)](https://travis-ci.org/iamkevingreen/Ragnarok) [![Code Climate](https://codeclimate.com/github/iamkevingreen/Ragnarok/badges/gpa.svg)](https://codeclimate.com/github/iamkevingreen/Ragnarok)
 
 **A Meteor based CMS with Sass & Bower**
 
