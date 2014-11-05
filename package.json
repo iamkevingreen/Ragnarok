@@ -1,0 +1,23 @@
+{
+  "name": "Ragnarok",
+  "version": "0.0.0",
+  "description": "Meteor based CMS",
+  "main": "ragnarok.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "meteor",
+    "test": "jasmine-node --captureExceptions tests/."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iamkevingreen/ragnarok.git"
+  },
+  "author": "Green, Kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamkevingreen/ragnarok/issues"
+  },
+  "homepage": "https://github.com/iamkevingreen/ragnarok/"
+}
