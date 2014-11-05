@@ -10,3 +10,19 @@ Template.postSubmit.events({
     Router.go('postPage', post);
   }
 });
+
+Template.postSubmit.rendered = function() {
+  $('#content').summernote({
+     toolbar: [
+    //[groupname, [button list]]
+
+    ['style', ['bold', 'italic', 'underline', 'clear']],
+    ['font', ['strikethrough']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['height', ['height']],
+    ['insert', ['picture', 'link', 'video']]
+  ]
+  });
+};
