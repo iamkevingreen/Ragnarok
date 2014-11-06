@@ -4,7 +4,7 @@ node_js:
 before_script:
 - "npm i -g jasmine-node"
 before_install:
-  - "curl -L http://git.io/ejPSng | /bin/sh"
+  # - "curl -L http://git.io/ejPSng | /bin/sh"
   - "curl -L https://raw.githubusercontent.com/josephfinlayson/travis-ci-laika/master/configure.sh | /bin/sh"
 services:
   - mongodb
