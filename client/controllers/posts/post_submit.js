@@ -3,8 +3,8 @@ Template.postSubmit.events({
     e.preventDefault();
 
     var post = {
-      url: $(e.target).find('[name=url]').val(),
       title: $(e.target).find('[name=title]').val(),
+      publishedAt: $(e.target).find('[name=published-at]').val(),
       content: $(e.target).find('[name=content]').val()
     };
 

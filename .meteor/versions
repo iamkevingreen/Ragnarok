@@ -3,6 +3,8 @@ accounts-password@1.0.4
 accounts-ui-unstyled@1.1.4
 alanning:package-stubber@0.0.9
 alanning:roles@1.2.13
+aldeed:collection2@2.2.0
+aldeed:simple-schema@1.1.0
 amplify@1.0.0
 application-configuration@1.0.3
 autoupdate@1.1.3
