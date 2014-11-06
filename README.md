@@ -13,6 +13,19 @@ Run `meteor` in the root to install dependencies and start the server
 
 *No need to run bower install despite it being in the root meteor package handles that*
 
+## Roles
+
+Currently we only have an admin and normal user role, normal users will only be able to comment on blog posts and update there profile, additional roles may be added as needed.
+
+#### Admnin Role
+
+Admins have complete control, there is an admin dashboard that gives users a familar backend much like wordpress or other cms frameworks, Admins will be able to modify users, post articles, and create/edit content.
+
+#### Coming
+
+An editor role that's an inbetween where you will be able to toggle the things they have access to at a granular level?
+
+
 ## What's out of the box?
 
 * [Bourbon mixin library](http://bourbon.io/)
@@ -21,6 +34,7 @@ Run `meteor` in the root to install dependencies and start the server
 * [bower support via mquandalle (meteor package)](https://github.com/mquandalle/meteor-bower)
 * [s3 upload support via lepozep (meteor package)](https://github.com/Lepozepo/S3/)
 * [Meteor Accounts-UI and Accounts-Password](https://docs.meteor.com/#/basic/accounts)
+* [Role Management](https://github.com/alanning/meteor-roles)
 
 *please check packages above if any issues arrive*
 

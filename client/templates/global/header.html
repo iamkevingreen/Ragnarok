@@ -8,7 +8,7 @@
     </div>
   </header>
   <nav>
-    {{#if currentUser}}<ul class="admin-navigation">
+    {{#if isInRole 'admin'}}<ul class="admin-navigation">
       <li><a href="{{pathFor 'postSubmit'}}">Create new Post</a></li>
     </ul>{{/if}}
   </nav>
