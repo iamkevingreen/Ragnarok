@@ -26,7 +26,7 @@ Template.postSubmit.events({
 
 Template.postSubmit.rendered = function() {
   $('.datepicker').pickadate({
-    format: 'yyyy-mm-dd'
+    format: 'yyyy-mm-dd',
   });
 
 
