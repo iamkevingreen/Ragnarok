@@ -18,4 +18,6 @@ velocity:html-reporter
 aldeed:simple-schema
 aldeed:collection2
 aldeed:autoform
+aldeed:autoform-bs-datepicker
+iamkevingreen:meteor-pickadate
 

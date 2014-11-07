@@ -4,7 +4,7 @@ Template.postSubmit.events({
 
     var post = {
       title: $(e.target).find('[name=title]').val(),
-      publishedAt: $(e.target).find('[name=published-at]').val(),
+      publishedAt: $(e.target).find('[name=publishedAt]').val(),
       content: $(e.target).find('[name=content]').val()
     };
 
@@ -15,8 +15,8 @@ Template.postSubmit.events({
         return alert(error.reason);
 
       // please choose a unique page slug to prevent duplication
-      if (result.postExists)
-        alert('This link has already beeen posted');
+      // if (result.postExists)
+      //   alert('This link has already beeen posted');
 
 
       Router.go('postPage', {_id: result._id});
@@ -24,6 +24,8 @@ Template.postSubmit.events({
   }
 });
 
-// Template.postSubmit.rendered = function() {
-//   $('#content').summernote();
-// };
+Template.postSubmit.rendered = function() {
+  $('.datepicker').pickadate({
+    format: 'yyyy-mm-dd'
+  });
+};
