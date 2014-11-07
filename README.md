@@ -11,7 +11,9 @@ Navigate to `server/fixtures.js` to change the default admin settings to whateve
 
 Run `meteor` in the root to install dependencies and start the server
 
-*No need to run bower install despite it being in the root meteor package handles that*
+## Forms
+
+Using [Aldeeds](https://github.com/aldeed/meteor-autoform) package for creating forms on the fly, please check the extensive documentation there as well as some the examples in the various post types. The package automatically installs the other 2 package dependences which is the simple schema builder and collection2 package which allows you to create schemas in a controller and attach them to a collection so you can validate on postInsert.
 
 ## Roles
 
@@ -35,6 +37,7 @@ An editor role that's an inbetween where you will be able to toggle the things t
 * [s3 upload support via lepozep (meteor package)](https://github.com/Lepozepo/S3/)
 * [Meteor Accounts-UI and Accounts-Password](https://docs.meteor.com/#/basic/accounts)
 * [Role Management](https://github.com/alanning/meteor-roles)
+* [Form creation with schema builder/collection builder dependencies](https://github.com/aldeed/meteor-autoform)
 
 *please check packages above if any issues arrive*
 
