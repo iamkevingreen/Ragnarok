@@ -1,0 +1,27 @@
+form button {
+  border: 1px solid;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: none;
+  outline: none;
+  margin: 10px 0;
+  display: block;
+  @include transition(all .5s);
+  &:hover {
+    @include transition(all .5s);
+    background: #000000;
+    color: #fff;
+  }
+  &.lite {
+    border-color: rgba(100,100,100,.1);
+    background: #d0dcdc;
+    &:hover {
+      background: #fff;
+      color: #0b869e;
+    }
+  }
+  &.expand {
+    width: 100%;
+  }
+}

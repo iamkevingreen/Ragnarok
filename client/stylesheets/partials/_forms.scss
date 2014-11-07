@@ -1,13 +1,47 @@
-.form-group {
-  padding: 0 30px;
-}
 
 #editControls {
   background: #000;
+  margin-top: 20px;
   a {
     color: #fff;
+    padding: 8px;
+    display: inline-block;
+  }
+  span.spacer {
+    display: inline-block;
+    height: 10px;
+    width: 1px;
+    background: rgba(255,255,255,.5);
+    margin: 0 10px;
   }
 }
-button {
-
+#editor {
+  outline: none;
+  padding: 20px;
+  background: rgba(100,100,100,.1);
+  @include border-bottom-radius(5px);
+}
+.form-left {
+  float: left;
+  width: 80%;
+  padding-right: 10px;
+  @include box-sizing(border-box);
+}
+.form-right {
+  float: right;
+  width:20%;
+  padding-left: 10px;
+  @include box-sizing(border-box);
+}
+form {
+  input {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border: 1px solid rgba(100,100,100,.1);
+  }
+}
+.publish-options {
+  padding: 10px;
+  border: 1px solid rgba(100,100,100,.1);
 }
