@@ -1,33 +1,40 @@
-Template.postSubmit.events({
+Template.postEdit.events({
   'submit form': function(e) {
     e.preventDefault();
-
-    var post = {
+    var currentPostId = this._id;
+    var postProperties = {
       title: $(e.target).find('[name=title]').val(),
       publishedAt: $(e.target).find('[name=publishedAt]').val(),
       content: $(e.target).find('[name=content]').val()
-    };
-
-    Meteor.call('postInsert', post, function(error, result) {
-
-      // abort and display error
-      if (error)
-        return alert(error.reason);
-
-      // please choose a unique page slug to prevent duplication
-      // if (result.postExists)
-      //   alert('This link has already beeen posted');
-
-
-      Router.go('postPage', {_id: result._id});
-    })
+    }
+    Posts.update(currentPostId, {
+      $set: postProperties
+    }, function(error) {
+      if (error) { // display the error to the user
+        alert(error.reason);
+      } else {
+        Router.go('postPage', {
+          _id: currentPostId
+        });
+      }
+    });
+  },
+  'click .delete': function(e) {
+    e.preventDefault();
+    if (confirm("Delete this post?")) {
+      var currentPostId = this._id;
+      Posts.remove(currentPostId);
+      Router.go('postsList');
+    }
   }
 });
 
-Template.postSubmit.rendered = function() {
+
+Template.postEdit.rendered = function() {
   // $('.datepicker').pickadate({
   //   format: 'yyyy-mm-dd',
   // });
+  inject_old_content();
 
 
   $('#editControls a').click(function(e) {
@@ -50,6 +57,10 @@ Template.postSubmit.rendered = function() {
 
   function update_output() {
     $('#output').val($('#editor').html());
+  }
+
+  function inject_old_content() {
+     $('#editor').html($('#output').val());
   }
 
 };
